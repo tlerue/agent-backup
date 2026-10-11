@@ -1,0 +1,50 @@
+{
+  "backup_date": "2026-10-11T09:16:00+02:00",
+  "automations": [
+    {
+      "id": "5f75679a-8f7a-4409-b404-22df35b960bd",
+      "name": "courses-recettes-md-ntfy",
+      "prompt_snippet": "Exécuter le script /home/user/.agents/scripts/send-md-ntfy.sh avec les paramètres suivants : - path ...",
+      "model_id": "qwen/qwen3-coder-next",
+      "rrule": "DTSTART:20250101T070000\\nRRULE:FREQ=DAILY",
+      "script": "/home/user/.agents/scripts/send-md-ntfy.sh",
+      "type": "send-md-ntfy"
+    },
+    {
+      "id": "b2145e50-08c7-4464-adf8-b8eaa2db333e",
+      "name": "courses-recettes-md-ntfy",
+      "prompt_snippet": "Exécuter le script /home/user/.agents/scripts/send-md-ntfy.sh avec les paramètres suivants : - path ...",
+      "model_id": "qwen/qwen3-coder-next",
+      "rrule": "DTSTART:20250101T070000\\nRRULE:FREQ=DAILY",
+      "script": "/home/user/.agents/scripts/send-md-ntfy.sh",
+      "type": "send-md-ntfy"
+    },
+    {
+      "id": "912ecec9-a335-42a2-9090-5e38fe4f2999",
+      "name": "Recettes du jour - Le Drivé Tout Nu",
+      "prompt_snippet": "Execute the daily recipe pipeline for \"Le Drivé Tout Nu\" drive. This will: 1. Collect the latest pro...",
+      "model_id": "qwen/qwen3-coder-next",
+      "rrule": "DTSTART:20261007T070000\\nRRULE:FREQ=DAILY",
+      "script": "/home/user/courses-recettes/cli/run_pipeline_daily.py",
+      "type": "pipeline-recettes"
+    },
+    {
+      "id": "089f3959-88f7-4d3a-b53b-b0043928a2d0",
+      "name": "Courses-recettes — chaîne du matin",
+      "prompt_snippet": "Exécute la chaîne quotidienne du pipeline courses-recettes et rapporte le verdict dans le chat. 1. ...",
+      "model_id": "customqwenqwen3-coder-next",
+      "rrule": "DTSTART:20260928T070000\\nRRULE:FREQ=DAILY",
+      "script": "/home/user/courses-recettes/agents/run_pipeline.py",
+      "type": "pipeline-chaîne"
+    },
+    {
+      "id": "6ec0d9eb-2ce2-42a6-ae60-f04631e11cff",
+      "name": "Suivi quotidien classements Google Maps — infirmiers Quimper (07h50, filet de sécurité)",
+      "prompt_snippet": "Suivi quotidien des classements Google Maps des cabinets infirmiers à Quimper — RUN DE FILET DE SÉCU...",
+      "model_id": "customqwenqwen3-coder-next",
+      "rrule": "DTSTART:20260925T075000\\nRRULE:FREQ=DAILY",
+      "script": "gmaps-quimper-classements",
+      "type": "gmaps-quimper"
+    }
+  ]
+}
