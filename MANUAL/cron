@@ -1,6 +1,7 @@
 | Nom | Fréquence | Heure | Rôle |
 |---|---|---|---|
-| Courses-recettes — chaîne du matin | Quotidienne | 07:00 | Exécute le pipeline complet et rapporte le verdict dans le chat |
-| courses-recettes-md-ntfy | Quotidienne | 07:00 | Envoie un rapport Markdown via ntfy.sh |
-| Courses-recettes — rapport ntfy.sh | Quotidienne | 07:15 | Rapport Markdown quotidien des recettes Le Drivé Tout Nu |
 | Suivi classements Google Maps | Quotidienne | 07:50 | Filet de sécurité : suivi des classements des cabinets infirmiers à Quimper |
+
+| Courses-recettes — chaîne du matin (verdict chat) | 07:00 | **08:00** |
+| courses-recettes-md-ntfy | 07:00 | **08:00** |
+| Courses-recettes — rapport ntfy.sh | 07:15 | **08:15** |
